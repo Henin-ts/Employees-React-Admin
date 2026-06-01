@@ -1,0 +1,106 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Martin",
+      "email": "alice@company.com",
+      "department": "Informatique",
+      "salary": 2800,
+      "active": true
+    },
+    {
+      "id": 2,
+      "firstName": "Bob",
+      "lastName": "Dupont",
+      "email": "bob@company.com",
+      "department": "Marketing",
+      "salary": 2500,
+      "active": true
+    },
+    {
+      "id": 3,
+      "firstName": "Clara",
+      "lastName": "Nguyen",
+      "email": "clara@company.com",
+      "department": "RH",
+      "salary": 2600,
+      "active": false
+    },
+    {
+      "id": 4,
+      "firstName": "David",
+      "lastName": "Bernard",
+      "email": "david@company.com",
+      "department": "Informatique",
+      "salary": 3200,
+      "active": true
+    },
+    {
+      "id": 5,
+      "firstName": "Emma",
+      "lastName": "Leroy",
+      "email": "emma@company.com",
+      "department": "Marketing",
+      "salary": 2900,
+      "active": true
+    }
+  ],
+  "stagiaires": [
+    {
+      "id": 1,
+      "firstName": "Lucas",
+      "lastName": "Petit",
+      "email": "lucas@company.com",
+      "department": "Informatique",
+      "remuneration": 800,
+      "paid": true,
+      "managerId": 7
+    },
+    {
+      "id": 2,
+      "firstName": "Léa",
+      "lastName": "Simon",
+      "email": "lea@company.com",
+      "department": "Marketing",
+      "remuneration": 700,
+      "paid": true,
+      "managerId": 2
+    },
+    {
+      "id": 3,
+      "firstName": "Hugo",
+      "lastName": "Michel",
+      "email": "hugo@company.com",
+      "department": "Informatique",
+      "remuneration": 0,
+      "paid": false,
+      "managerId": 4
+    },
+    {
+      "id": 4,
+      "firstName": "Camille",
+      "lastName": "Roux",
+      "email": "camille@company.com",
+      "department": "Marketing",
+      "remuneration": 600,
+      "paid": true,
+      "managerId": 5
+    },
+    {
+      "id": 5,
+      "firstName": "Noah",
+      "lastName": "Garcia",
+      "email": "noah@company.com",
+      "department": "RH",
+      "remuneration": 0,
+      "paid": false,
+      "managerId": 1
+    },
+    {
+      "firstName": "sambo",
+      "lastName": "Henintsoa",
+      "id": 6
+    }
+  ]
+}
