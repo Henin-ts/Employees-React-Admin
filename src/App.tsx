@@ -7,6 +7,8 @@ import EmployeeEdit from "./Employees/EmployeeEdit";
 import EmployeeShow from "./Employees/EmployeeShow";
 import InternList from "./Stagiaires/InternList ";
 import InternCreate from "./Stagiaires/InternCreate";
+import InternEdit from "./Stagiaires/InternEdit";
+import InternShow from "./Stagiaires/InternShow";
 const dataProvider = jsonServerProvider("http://localhost:3002");
 
 export const App = () => (
@@ -19,6 +21,12 @@ export const App = () => (
       show={EmployeeShow}
     />
 
-    <Resource name="stagiaires" list={InternList} create={InternCreate} />
+    <Resource
+      name="stagiaires"
+      list={InternList}
+      create={InternCreate}
+      edit={InternEdit}
+      show={InternShow}
+    />
   </Admin>
 );

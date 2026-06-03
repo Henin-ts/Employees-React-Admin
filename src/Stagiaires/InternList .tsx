@@ -38,6 +38,7 @@ const InternList = () => {
       <Datagrid>
         <TextField source="firstName" label="Nom" />
         <TextField source="lastName" label="Prénom" />
+        <TextField source="email" label="Email" />
         <NumberField
           source="remuneration"
           label="Remuneration"

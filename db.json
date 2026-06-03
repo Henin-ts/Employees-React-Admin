@@ -98,8 +98,11 @@
       "managerId": 1
     },
     {
-      "firstName": "sambo",
-      "lastName": "Henintsoa",
+      "remuneration": 2000,
+      "firstName": "Maminiaina ",
+      "lastName": "Elia",
+      "email": "Elia@gmail.com",
+      "managerId": 3,
       "id": 6
     }
   ]

@@ -1,7 +1,5 @@
 import {
-  BooleanField,
-  BooleanInput,
-  Create,
+  Edit,
   minValue,
   NumberInput,
   required,
@@ -11,14 +9,13 @@ import {
   useGetList,
 } from "react-admin";
 
-const InternCreate = () => {
+const InternEdit = () => {
   const { data: managers } = useGetList("employees", {
-    pagination: { page: 1, perPage: 100 },
+    pagination: { page: 1, perPage: 10 },
     sort: { field: "firstName", order: "ASC" },
   });
-
   return (
-    <Create>
+    <Edit redirect="list">
       <SimpleForm>
         <TextInput source="firstName" label="Votre Nom" validate={required()} />
         <TextInput
@@ -27,25 +24,20 @@ const InternCreate = () => {
           validate={required()}
         />
         <TextInput source="email" label="Votre Email" validate={required()} />
-        <BooleanInput
-          source="remuneration"
-          label="Remuneration"
-          defaultValue={true}
-        />
         <NumberInput
           source="remuneration"
-          label="Votre remuneration"
+          label="Votre Remuneration"
           validate={minValue(1)}
         />
         <SelectInput
+          label="Votre manager"
           source="managerId"
-          label="Votre Manager"
-          optionText="firstName"
-          choices={managers || []}
+          choices={managers}
+          optionText="lastName"
         />
       </SimpleForm>
-    </Create>
+    </Edit>
   );
 };
 
-export default InternCreate;
+export default InternEdit;
