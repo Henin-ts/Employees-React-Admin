@@ -1,24 +1,22 @@
 import {
+  EmailField,
   FunctionField,
+  Link,
   NumberField,
   ReferenceField,
   Show,
   SimpleShowLayout,
   TextField,
-  useGetList,
 } from "react-admin";
+import ManagerCard from "./ManagerCard";
 
 const InternShow = () => {
-  const { data: managers } = useGetList("employees", {
-    pagination: { page: 1, perPage: 10 },
-    sort: { field: "firstName", order: "ASC" },
-  });
   return (
     <Show>
       <SimpleShowLayout>
         <TextField source="firstName" />
         <TextField source="lastName" />
-        <TextField source="email" />
+        <EmailField source="email" />
         <NumberField source="remuneration" />
         <ReferenceField
           reference="employees"
@@ -26,9 +24,14 @@ const InternShow = () => {
           label="Nom du Manager"
         >
           <FunctionField
-            render={(record) => `${record.firstName} ${record.lastName}`}
+            render={(record) => (
+              <Link to={`/employees/${record.id}/show`}>
+                {record.firstName} {record.lastName}
+              </Link>
+            )}
           />
         </ReferenceField>
+        <ManagerCard />
       </SimpleShowLayout>
     </Show>
   );

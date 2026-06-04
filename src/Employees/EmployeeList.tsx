@@ -8,7 +8,9 @@ import {
   SelectInput,
   EditButton,
   DeleteButton,
+  EmailField,
 } from "react-admin";
+import QuickStatusToggle from "../Stagiaires/QuickStatusToggle";
 
 const filters = [
   <SearchInput key="q" source="q" alwaysOn />,
@@ -30,7 +32,7 @@ export const EmployeeList = () => (
     <Datagrid rowClick="show">
       <TextField source="firstName" label="Nom" />
       <TextField source="lastName" label="Prénom" />
-      <TextField source="email" label="Email" />
+      <EmailField source="email" label="Email" />
       <TextField source="department" label="Department" />
       <NumberField
         source="salary"
@@ -42,6 +44,7 @@ export const EmployeeList = () => (
         }}
       />
       <BooleanField source="Value" label="Actif" />
+      <QuickStatusToggle /> 
       <EditButton />
       <DeleteButton />
     </Datagrid>

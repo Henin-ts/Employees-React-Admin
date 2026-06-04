@@ -2,6 +2,7 @@ import {
   Datagrid,
   DeleteButton,
   EditButton,
+  EmailField,
   FunctionField,
   List,
   NumberField,
@@ -34,11 +35,11 @@ const filters = [
 
 const InternList = () => {
   return (
-    <List filters={filters} perPage={5}>
+    <List filters={filters} perPage={5} title="listes des Stagiaires">
       <Datagrid>
         <TextField source="firstName" label="Nom" />
         <TextField source="lastName" label="Prénom" />
-        <TextField source="email" label="Email" />
+        <EmailField source="email" label="Email" />
         <NumberField
           source="remuneration"
           label="Remuneration"

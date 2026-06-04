@@ -9,10 +9,11 @@ import InternList from "./Stagiaires/InternList ";
 import InternCreate from "./Stagiaires/InternCreate";
 import InternEdit from "./Stagiaires/InternEdit";
 import InternShow from "./Stagiaires/InternShow";
+import Dashboard from "./Stagiaires/Dashboard";
 const dataProvider = jsonServerProvider("http://localhost:3002");
 
 export const App = () => (
-  <Admin layout={Layout} dataProvider={dataProvider}>
+  <Admin layout={Layout} dataProvider={dataProvider} dashboard={Dashboard}>
     <Resource
       name="Employees"
       list={EmployeeList}

@@ -1,42 +1,6 @@
 {
   "employees": [
     {
-      "id": 1,
-      "firstName": "Alice",
-      "lastName": "Martin",
-      "email": "alice@company.com",
-      "department": "Informatique",
-      "salary": 2800,
-      "active": true
-    },
-    {
-      "id": 2,
-      "firstName": "Bob",
-      "lastName": "Dupont",
-      "email": "bob@company.com",
-      "department": "Marketing",
-      "salary": 2500,
-      "active": true
-    },
-    {
-      "id": 3,
-      "firstName": "Clara",
-      "lastName": "Nguyen",
-      "email": "clara@company.com",
-      "department": "RH",
-      "salary": 2600,
-      "active": false
-    },
-    {
-      "id": 4,
-      "firstName": "David",
-      "lastName": "Bernard",
-      "email": "david@company.com",
-      "department": "Informatique",
-      "salary": 3200,
-      "active": true
-    },
-    {
       "id": 5,
       "firstName": "Emma",
       "lastName": "Leroy",
@@ -68,16 +32,6 @@
       "managerId": 2
     },
     {
-      "id": 3,
-      "firstName": "Hugo",
-      "lastName": "Michel",
-      "email": "hugo@company.com",
-      "department": "Informatique",
-      "remuneration": 0,
-      "paid": false,
-      "managerId": 4
-    },
-    {
       "id": 4,
       "firstName": "Camille",
       "lastName": "Roux",
@@ -88,22 +42,20 @@
       "managerId": 5
     },
     {
-      "id": 5,
-      "firstName": "Noah",
-      "lastName": "Garcia",
-      "email": "noah@company.com",
-      "department": "RH",
-      "remuneration": 0,
-      "paid": false,
-      "managerId": 1
-    },
-    {
       "remuneration": 2000,
       "firstName": "Maminiaina ",
       "lastName": "Elia",
       "email": "Elia@gmail.com",
       "managerId": 3,
       "id": 6
+    },
+    {
+      "paid": false,
+      "firstName": "henintsoa",
+      "lastName": "Maminiaina",
+      "email": "henintsoamaminiaina07@gmail.com",
+      "managerId": 1,
+      "id": 7
     }
   ]
 }

@@ -7,6 +7,7 @@ import {
   SimpleForm,
   TextInput,
   useGetList,
+  useRecordContext,
 } from "react-admin";
 
 const InternEdit = () => {
@@ -14,8 +15,18 @@ const InternEdit = () => {
     pagination: { page: 1, perPage: 10 },
     sort: { field: "firstName", order: "ASC" },
   });
+  const BookTitle = () => {
+    const record = useRecordContext();
+    if (!record) return null;
+    return (
+      <span>
+        Modifier : {record.firstName} {record.lastName}
+      </span>
+    );
+  };
+
   return (
-    <Edit redirect="list">
+    <Edit redirect="list" title={<BookTitle />}>
       <SimpleForm>
         <TextInput source="firstName" label="Votre Nom" validate={required()} />
         <TextInput
